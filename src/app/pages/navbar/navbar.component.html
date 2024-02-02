@@ -1,0 +1,27 @@
+<p>
+  <mat-toolbar class="flex item-center justify-between" color="primary">
+    <div>
+      <span>My Recipe App</span>
+    </div>
+    <div>
+      <span class="example-spacer"></span>
+
+      <button
+        mat-button
+        class="example-icon favorite-icon"
+        aria-label="Example icon-button with heart icon"
+      >
+        {{ user.fullName }}
+      </button>
+
+      <button
+        mat-icon-button
+        class="example-icon favorite-icon"
+        aria-label="Example icon-button with heart icon"
+        (click)="handleLogout()"
+      >
+        <mat-icon>logout</mat-icon>
+      </button>
+    </div>
+  </mat-toolbar>
+</p>

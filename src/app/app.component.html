@@ -1,0 +1,16 @@
+<!-- <router-outlet></router-outlet> -->
+
+<div>
+  <div class="min-h-[90vh]">
+    @if (user) {
+    <app-navbar />
+    <app-home-page />
+    } @else {
+    <app-auth />
+    }
+  </div>
+
+  <div class="flex justify-center bg-black bg-opacity-20">
+    <!-- <app-footer /> -->
+  </div>
+</div>
